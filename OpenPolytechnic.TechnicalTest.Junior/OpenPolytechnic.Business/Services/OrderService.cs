@@ -70,11 +70,14 @@ namespace OpenPolytechnic.Business.Services
         {
             var result = new List<MenuItem>();
             var menuItems = menuItemFactory.GetAllMenuItems();
-            foreach(var menuItem in menuItems)
+            foreach(var menuItemId in menuItemIds)
             {
-                if (menuItemIds.Contains(menuItem.Id)) 
+                foreach(var menuItem in menuItems)
                 {
-                    result.Add(menuItem);
+                    if (menuItem.Id == menuItemId)
+                    {
+                        result.Add(menuItem);
+                    }
                 }
             }
             return result;
