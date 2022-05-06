@@ -1,4 +1,4 @@
-# OpenPolytechnicTechnicalTestJunior
+# Open Polytechnic Technical Test - Junior Level
 
 For this test you will be required to add to an existing application based on the problem statement below. The application has an Angular front-end, and a C#/.NET back-end. You should not need to touch the client and it exist only to make for an easy and (hopefully) visually appealing way to use a REST API and display the results.
 
